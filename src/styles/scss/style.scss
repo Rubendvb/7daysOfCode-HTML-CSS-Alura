@@ -1,6 +1,21 @@
 @use "./variables" as v;
+@use "nav";
 
 body {
   font-family: v.$font-family;
+  background-color: v.$white;
   font-size: 16px;
+  padding: 0 1rem;
+
+  @media (min-width: 768px) {
+    padding: 0 2rem;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 7rem;
+  }
+}
+
+img {
+  width: 100%;
 }

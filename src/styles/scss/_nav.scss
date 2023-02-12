@@ -1,0 +1,65 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.75rem 0;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 1440px) {
+    flex-wrap: nowrap;
+  }
+
+  img {
+    width: 9.25rem;
+  }
+
+  ul {
+    width: 100%;
+    order: 3;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      justify-content: space-evenly;
+    }
+
+    @media (min-width: 1440px) {
+      order: 0;
+      justify-content: flex-start;
+      margin-left: 7.5rem;
+    }
+
+    li {
+      color: v.$gray;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 24px;
+
+      @media (min-width: 1440px) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    gap: 0.75rem;
+
+    &--enter {
+      @include m.button(transparent, none, v.$gray);
+    }
+
+    &--register {
+      @include m.button(v.$red, solid 1px v.$red, v.$white);
+      border-radius: 8px;
+      height: 44px;
+      width: 112px;
+    }
+  }
+}

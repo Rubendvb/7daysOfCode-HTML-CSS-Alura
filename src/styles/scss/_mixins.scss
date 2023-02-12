@@ -1,0 +1,8 @@
+@mixin button($background-color, $border, $color) {
+  background-color: $background-color;
+  border: $border;
+  color: $color;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 1rem;
+}
