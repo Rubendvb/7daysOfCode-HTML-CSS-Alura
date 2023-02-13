@@ -36,10 +36,18 @@
     }
 
     li {
-      color: v.$gray;
       font-weight: 500;
       font-size: 1rem;
       line-height: 24px;
+
+      a {
+        color: v.$gray;
+        text-decoration: none;
+
+        &:hover {
+          color: rgb(71, 71, 71);
+        }
+      }
 
       @media (min-width: 1440px) {
         margin-right: 2rem;

@@ -3,10 +3,20 @@
 @mixin button($background-color, $border, $color) {
   background-color: $background-color;
   border: $border;
+  border-radius: 8px;
   color: $color;
   font-weight: 500;
   line-height: 24px;
   font-size: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    @if $background-color == transparent {
+      background-color: rgb(235, 235, 235);
+    } @else {
+      background-color: #8e2424da;
+    }
+  }
 }
 
 @mixin title($font-weight, $line-height, $font-size, $text-align, $margin-top) {

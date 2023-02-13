@@ -1,0 +1,84 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__span {
+    align-items: center;
+    background-color: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    color: v.$red;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 500;
+    height: 28px;
+    justify-content: center;
+    line-height: 20px;
+    margin-top: 96px;
+    padding: 4px 12px;
+    text-align: center;
+    width: 125px;
+  }
+
+  &__title {
+    @include m.title(600, 1.2, 1.625rem, center, 1.25rem);
+
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+      line-height: 1.2;
+    }
+  }
+
+  &__subtitle {
+    @include m.subtitle(v.$gray, 0.75rem, 400, 1.5, center, 20px);
+    margin-bottom: 4rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+  }
+
+  &__card {
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      @include m.title(500, 30px, 1.25rem, start, 64px);
+      margin-bottom: 32px;
+    }
+
+    &--container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      &-article {
+        border: 1px solid #eaecf0;
+        border-radius: 16px;
+        padding: 24px;
+
+        h5 {
+          @include m.title(500, 28px, 18px, start, 0);
+          margin-bottom: 32px;
+        }
+
+        &-info {
+          display: flex;
+          flex-direction: row;
+          gap: 24px;
+
+          span {
+            @include m.subtitle(v.$gray, 16px, 500, 24px, center, 0);
+          }
+        }
+      }
+    }
+  }
+}

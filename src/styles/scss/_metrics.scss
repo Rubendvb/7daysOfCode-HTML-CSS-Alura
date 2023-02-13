@@ -44,7 +44,7 @@
     }
 
     p {
-      @include m.subtitle(v.$gray, 0.875rem, 400, 24px, start, 8px);
+      @include m.subtitle(v.$gray, 0.875rem, 400, 24px, start, 0.5rem);
 
       @media (min-width: 768px) {
         font-size: 1rem;
