@@ -65,7 +65,6 @@
 
     &--register {
       @include m.button(v.$red, solid 1px v.$red, v.$white);
-      border-radius: 8px;
       height: 44px;
       width: 112px;
     }

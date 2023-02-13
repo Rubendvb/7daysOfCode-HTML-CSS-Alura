@@ -43,6 +43,10 @@
     }
   }
 
+  img {
+    width: calc(100% - 112px);
+  }
+
   &__card {
     width: 100%;
     max-width: 768px;
