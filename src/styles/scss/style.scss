@@ -2,8 +2,11 @@
 @use "nav";
 @use "header";
 
-body {
+* {
   font-family: v.$font-family;
+}
+
+body {
   background-color: v.$white;
   font-size: 16px;
   padding: 0 1rem;
