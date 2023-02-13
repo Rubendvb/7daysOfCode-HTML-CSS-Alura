@@ -1,6 +1,7 @@
 @use "./variables" as v;
 @use "nav";
 @use "header";
+@use "metrics";
 
 * {
   font-family: v.$font-family;
