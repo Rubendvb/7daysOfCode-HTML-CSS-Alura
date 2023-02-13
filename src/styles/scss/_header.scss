@@ -1,0 +1,25 @@
+@use "variables" as v;
+
+.header {
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: v.$red;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__title {
+    color: v.$black;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.02rem;
+    line-height: 60px;
+    margin-top: 24px;
+    text-align: center;
+  }
+}

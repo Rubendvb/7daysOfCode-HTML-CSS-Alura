@@ -1,5 +1,6 @@
 @use "./variables" as v;
 @use "nav";
+@use "header";
 
 body {
   font-family: v.$font-family;
