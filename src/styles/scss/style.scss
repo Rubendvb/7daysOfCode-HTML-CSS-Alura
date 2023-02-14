@@ -4,9 +4,11 @@
 @use "metrics";
 @use "jobs";
 @use "depoiments";
+@use "footer";
 
 * {
   font-family: v.$font-family;
+  box-sizing: border-box;
 }
 
 body {
