@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 96px;
 
   &__span {
     align-items: center;
@@ -44,7 +45,11 @@
   }
 
   img {
-    width: calc(100% - 112px);
+    width: 100%;
+
+    @media (min-width: 1024px) {
+      width: calc(100% - 112px);
+    }
   }
 
   &__card {

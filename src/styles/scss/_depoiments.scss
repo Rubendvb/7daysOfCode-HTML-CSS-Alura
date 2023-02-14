@@ -1,0 +1,50 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.depoiments {
+  align-items: center;
+  background-color: v.$light-red;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1216px;
+  padding: 2rem;
+  margin: 0 auto 96px;
+
+  @media (min-width: 768px) {
+    padding: 4rem;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: v.$red;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    @include m.title(500, 1.2, 1.625rem, center, 0);
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-name {
+      @include m.title(500, 24px, 16px, center, 16px);
+      letter-spacing: normal;
+    }
+
+    &-job {
+      @include m.subtitle(v.$gray, 14px, 400, 20px, center, 4px);
+    }
+  }
+}
