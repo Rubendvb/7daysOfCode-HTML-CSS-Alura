@@ -11,4 +11,4 @@ Challenge para praticar HTML e CSS
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 
-![](src/images/7daysofcode.png)
+![](src/images/7daysofcode.png#vitrinedev)
