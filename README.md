@@ -1,6 +1,6 @@
 # 7daysOfCode-HTML-CSS-Alura
 
-Challenge para practicar HTML e CSS
+Challenge para praticar HTML e CSS
 
 | :placard: Vitrine.Dev |                                                                                                  |
 | --------------------- | ------------------------------------------------------------------------------------------------ |
